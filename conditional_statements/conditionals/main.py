@@ -13,3 +13,5 @@ elif product == "Non - Periishable":
         print ("Consider discount")
     else:
         Print ("No discount needed")
+else: 
+    print ("The product is not specified")
