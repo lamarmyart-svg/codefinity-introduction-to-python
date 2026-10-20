@@ -1,9 +1,15 @@
 # initial conditions
-totalCost = 150
-#applying discounts based on purchase amount
-if totalCost >= 200:
-    print ("20% discount")
-elif totalCost >= 100:
-    print ("10% discount applied")
-else:
-    print ("no discount for purchases under $100")
+product = 'Non-Perishable'
+stock = 70
+daysdelivered = 3
+# Determine the handling of products based on type and condition
+if product == "Perishable":
+    if daysdelivered >= 4:
+        print ("Not fresh - initiate discount")
+    else:
+        print ("product is fresh")
+elif product == "Non - Periishable":
+    if stock > 100:
+        print ("Consider discount")
+    else:
+        Print ("No discount needed")
