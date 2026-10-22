@@ -1,10 +1,11 @@
-product_type = "Dairy"
-day_of_week = "wedensday"
-if product_type == "Fruits" and day_of_week == "Monday":
-    print ("10% discount on fruits today!")
-elif product_type == "Vegetables" and  day_of_week == "Tuesday":
-    print ("15% discount on Vegetables today!")
-elif product_type == "other":
-    print ("No discoount available")
+product_type = "perishable"
+days_until_expiration = 5
+stock_level = 60
+if days_until_expiration <= 3 and stock_level > 50:
+    print ("30% discount today")
+elif  days_until_expiration <= 6 and stock_level >50:
+    print ("20% discount today")
+elif days_until_expiration > 6 and stock_level <= 50:
+    print ("10% discount today")
 else:
-    print ("No special discounts today")
+    print ("no discount available for non perishable items")
