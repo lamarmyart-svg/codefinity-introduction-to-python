@@ -2,10 +2,13 @@ meat = ['Ham', 3.99, 50, "Sliced"]
 cheese = ["Chedder", 5.49, 100, "Sharp"]
 condiment = ['Mustard', 1.99, 75, "Spicy"]
 deli_dept = [meat, cheese, condiment]
-if 'Ham' in meat: 
+print("Initial Deli List:", deli_dept)
+
+if 'Ham' in meat:
     meat[2] = 100
-    seasonal_meat = ["Turkey", 4.50, 100, "Sliced"]
-deli_dept.append (seasonal_meat)
-deli_dept.remove (condiment)
-deli_dept.sort ()
-print ("deli_dept")
+seasonal_meat = ["Turkey", 4.50, 100, "Sliced"]
+deli_dept.append(seasonal_meat)
+deli_dept.remove(condiment)
+deli_dept.sort()
+
+print("Updated Deli List:", deli_dept)
